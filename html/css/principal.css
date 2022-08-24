@@ -54,6 +54,9 @@ a{
     text-decoration: none;
    
 }
+.button_selected{
+    border: solid 3px gray
+}
 header {
     display: flex;
     justify-content: center;
@@ -153,6 +156,13 @@ footer{
     flex-wrap: wrap;
     justify-content: center;
 }
+.g_content_items{
+    display: flex;
+    width: var(--ancho);
+    margin: 0px auto ;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .botones{
     /* text-align: center; */
     display: flex;
@@ -212,6 +222,32 @@ footer{
     margin: 1% 1% 1% 0%;
     height: 20%;
     /* border: solid 5px black;  */  
+}
+
+.card_item{
+    
+    
+    background-color: lightgray;
+    display: flex;
+    overflow: auto;
+    width: 18%;
+    /*  padding: 1%;  */
+    margin: 0% 1% 1% 0%;
+    flex-direction:column
+}
+.image_item{
+    width: 30%;
+    height: auto;
+
+    margin: 1% 1% 1% 1%
+}
+.text_on_item{
+    display: flex;
+    
+    flex-direction: column;
+}
+.text_on_item > p, .text_on_item > h3{
+    margin: 0%;
 }
 .image_champ{
     width: 100%;
@@ -357,9 +393,32 @@ footer{
     animation: expand 500ms;
     transform: scale(1.1);
 }
+.card_champions:hover{
+    background:rgb(99, 99, 99);
+    /* transition: 500ms;
+    transform: scale(1.1); */
+
+    animation: expand 500ms;
+    transform: scale(1.1);
+}
+/* .card_item:hover{
+    background:rgb(99, 99, 99);
+    transition: 500ms;
+    transform: scale(1.1); 
+
+    animation: expand 500ms;
+    transform: scale(1.1);
+} */
 @keyframes expand{
     0%{transform: scale(1);}
-    /* 50%{transform: scale(1);} */
+    
     100%{ transform: scale(1.1);}
     
+}
+.margin_accord{
+    margin-top: 2%;
+}
+.padding_accord{
+    padding: 0% !important;
+    width: 93% !important;
 }

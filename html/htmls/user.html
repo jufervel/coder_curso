@@ -1,58 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href=".././css/principal.css">
-
+    <link rel="stylesheet" href=".././css/bootstrap.min.css">
     <title>Datagamer_user</title>
 </head>
-<body>
-    <header>
-        <nav>
-            <img src=".././imgs/header_slim.png"  class="background_image">
-            <img class="nav_1index img_icon"  src=".././imgs/icon.png">
-            <ul class="nav_1index text_header">
-                <li>HIDE ON BUSH</li>
-                <li>GOLD III</li>
-                <li>LEVEL 345</li>
-                
-            </ul>
-            <div class="icons_u">
-            
-                <a style="width:6%; margin:2% 2% 2% 2%;" href=".././"><img src=".././icons/hogar.svg" style="width: 100%;" class= "icons_header"></a>
-                <img src=".././icons/discord.svg" class= "icons_header " >
-                <img src=".././icons/facebook.svg" class= "icons_header " >
-                <img src=".././icons/twitter.svg" class= "icons_header " >
-                <img src=".././icons/usuario (1).svg" class= "icons_header " >
-            </div>
-            
-        </nav  >
-        
-    </header>
-    <div class="g_content">
-        <a style="width:30px; margin:1% 1% 0.6% 0%;"href=".././"><img style="width: 30px;"  class="icon_hv" src=".././icons/hogar.svg" alt=""></a>
-        <div class="botones"><a class="links" href=".././htmls/tier_rank.html"> TIER RANK</a></div>
-        <div class="botones"><a class="links" href=".././htmls/champions.html"> CHAMPIONS</a></div>
-        <div class="botones"><a class="links" href=".././htmls/items.html"> ITEMS</a></div>
-        
-    </div>
 
-    <footer>
-        
-        <div class="icons_f">
-            
-            <a style="width:6%; margin:2% 2% 2% 2%;"  href=".././" ><img src=".././icons/hogar.svg" style="width: 100%;" class= "icons_header"></a>
-            
-            <img src=".././icons/discord.svg" class= "icons_footer " >
-            <img src=".././icons/facebook.svg" class= "icons_footer " >
-            <img src=".././icons/twitter.svg" class= "icons_footer " >
-            <img src=".././icons/usuario (1).svg" style="margin: 2% 2% 2% 0% ;" class= "icons_footer " >
+<body>
+    <section class="grid">
+        <div class="header cl-red">
+            <header>
+                <nav>
+                    <img src=".././imgs/header_slim.png" class="background_image">
+                    <img class="nav_1index img_icon" src=".././imgs/icon.png">
+                    <ul class="nav_1index text_header">
+                        <li>HIDE ON BUSH</li>
+                        <li>GOLD III</li>
+                        <li>LEVEL 345</li>
+
+                    </ul>
+                    <div class="icons_u">
+
+                        <a style="width:6%; margin:2% 2% 2% 2%;" href=".././"><img src=".././icons/hogar.svg"
+                                style="width: 100%;" class="icons_header"></a>
+                        <img src=".././icons/discord.svg" class="icons_header ">
+                        <img src=".././icons/facebook.svg" class="icons_header ">
+                        <img src=".././icons/twitter.svg" class="icons_header ">
+                        <a style="width:7%; margin:2% 2% 2% 0%;" href=".././htmls/user.html"><img
+                                src=".././icons/usuario.svg" style="width: 100%;" class="icons_header"></a>
+                    </div>
+
+                </nav>
+
+
+
+            </header>
+
         </div>
-       
-    </footer>
+        <div class="menu cl-verde">
+
+            <div class="g_content">
+                <a class="home_botones" href=".././"><img class="home_botones" class="icon_hv"
+                        src=".././icons/hogar.svg" alt=""></a>
+                <div class="botones"><a class="links" href=".././htmls/tier_rank.html"> TIER RANK</a></div>
+                <div class="botones"><a class="links" href=".././htmls/champions.html">
+                        CHAMPIONS</a></div>
+                <div class="botones button_selected"><a class="links" href=".././htmls/items.html"> ITEMS</a></div>
+
+            </div>
+
+
+        </div>
+        <div class="content cl-azul">
+
+            <div class="g_content">
+                <h2> ITEMS</h2>
+            </div>
+
+            <div class="g_content_items">
+
+                <div class="card_item">
+                    <div class="accordion accordion-flush" id="accordionFlushExampleA">
+                        <div class="accordion-item margin_accord">
+                            <h2 class="accordion-header" id="flush-headingOneA">
+                                <button class="accordion-button collapsed padding_accord" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOneA" aria-expanded="false"
+                                    aria-controls="flush-collapseOneA">
+                                    <img class="image_item" src="../imgs/1001.png" alt="basic boots">
+                                    <h3>basic boots</h3>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOneA" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOneA" data-bs-parent="#accordionFlushExampleA">
+                                <div class="accordion-body">
+                                    <p>Boots is the basic item from which the gold value for the stat movement speed is
+                                        derived (approximately 12 Gold 12 per point of movement speed).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item margin_accord">
+                            <h2 class="accordion-header" id="flush-headingTwoA">
+                                <button class="accordion-button collapsed padding_accord" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTwoA" aria-expanded="false"
+                                    aria-controls="flush-collapseTwoA">
+                                    <img class="image_item" src="../imgs/1001.png" alt="basic boots">
+                                    <h3>basic boots</h3>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwoA" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwoA" data-bs-parent="#accordionFlushExampleA">
+                                <div class="accordion-body">
+                                    <p>Boots is the basic item from which the gold value for the stat movement speed is
+                                        derived (approximately 12 Gold 12 per point of movement speed).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item margin_accord">
+                            <h2 class="accordion-header" id="flush-headingThreeA">
+                                <button class="accordion-button collapsed padding_accord" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeA"
+                                    aria-expanded="false" aria-controls="flush-collapseThreeA">
+                                    <img class="image_item" src="../imgs/1001.png" alt="basic boots">
+                                    <h3>basic boots</h3>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThreeA" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThreeA" data-bs-parent="#accordionFlushExampleA">
+                                <div class="accordion-body">
+                                    <p>Boots is the basic item from which the gold value for the stat movement speed is
+                                        derived (approximately 12 Gold 12 per point of movement speed).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card_item">
+                    <div class="accordion accordion-flush" id="accordionFlushExampleB">
+                        <div class="accordion-item margin_accord">
+                            <h2 class="accordion-header" id="flush-headingOneB">
+                                <button class="accordion-button collapsed padding_accord" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOneB" aria-expanded="false"
+                                    aria-controls="flush-collapseOneB">
+                                    <img class="image_item" src="../imgs/1001.png" alt="basic boots">
+                                    <h3>basic boots</h3>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOneB" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOneB" data-bs-parent="#accordionFlushExampleB">
+                                <div class="accordion-body">
+                                    <p>Boots is the basic item from which the gold value for the stat movement speed is
+                                        derived (approximately 12 Gold 12 per point of movement speed).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item margin_accord">
+                            <h2 class="accordion-header" id="flush-headingTwoB">
+                                <button class="accordion-button collapsed padding_accord" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTwoB" aria-expanded="false"
+                                    aria-controls="flush-collapseTwoB">
+                                    <img class="image_item" src="../imgs/1001.png" alt="basic boots">
+                                    <h3>basic boots</h3>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwoB" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwoB" data-bs-parent="#accordionFlushExampleB">
+                                <div class="accordion-body">
+                                    <p>Boots is the basic item from which the gold value for the stat movement speed is
+                                        derived (approximately 12 Gold 12 per point of movement speed).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item margin_accord">
+                            <h2 class="accordion-header" id="flush-headingThreeB">
+                                <button class="accordion-button collapsed padding_accord" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeB"
+                                    aria-expanded="false" aria-controls="flush-collapseThreeB">
+                                    <img class="image_item" src="../imgs/1001.png" alt="basic boots">
+                                    <h3>basic boots</h3>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThreeB" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThreeB" data-bs-parent="#accordionFlushExampleB">
+                                <div class="accordion-body">
+                                    <p>Boots is the basic item from which the gold value for the stat movement speed is
+                                        derived (approximately 12 Gold 12 per point of movement speed).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card_item">
+                    <div class="accordion accordion-flush" id="accordionFlushExampleC">
+                        <div class="accordion-item margin_accord">
+                            <h2 class="accordion-header" id="flush-headingOneC">
+                                <button class="accordion-button collapsed padding_accord" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOneC" aria-expanded="false"
+                                    aria-controls="flush-collapseOneC">
+                                    <img class="image_item" src="../imgs/1001.png" alt="basic boots">
+                                    <h3>basic boots</h3>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOneC" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOneC" data-bs-parent="#accordionFlushExampleC">
+                                <div class="accordion-body">
+                                    <p>Boots is the basic item from which the gold value for the stat movement speed is
+                                        derived (approximately 12 Gold 12 per point of movement speed).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item margin_accord">
+                            <h2 class="accordion-header" id="flush-headingTwoC">
+                                <button class="accordion-button collapsed padding_accord" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTwoC" aria-expanded="false"
+                                    aria-controls="flush-collapseTwoC">
+                                    <img class="image_item" src="../imgs/1001.png" alt="basic boots">
+                                    <h3>basic boots</h3>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwoC" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwoC" data-bs-parent="#accordionFlushExampleC">
+                                <div class="accordion-body">
+                                    <p>Boots is the basic item from which the gold value for the stat movement speed is
+                                        derived (approximately 12 Gold 12 per point of movement speed).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item margin_accord">
+                            <h2 class="accordion-header" id="flush-headingThreeC">
+                                <button class="accordion-button collapsed padding_accord" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeC"
+                                    aria-expanded="false" aria-controls="flush-collapseThreeC">
+                                    <img class="image_item" src="../imgs/1001.png" alt="basic boots">
+                                    <h3>basic boots</h3>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThreeC" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThreeC" data-bs-parent="#accordionFlushExampleC">
+                                <div class="accordion-body">
+                                    <p>Boots is the basic item from which the gold value for the stat movement speed is
+                                        derived (approximately 12 Gold 12 per point of movement speed).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card_item">
+                    <div class="accordion accordion-flush" id="accordionFlushExampleD">
+                        <div class="accordion-item margin_accord">
+                            <h2 class="accordion-header" id="flush-headingOneD">
+                                <button class="accordion-button collapsed padding_accord" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOneD" aria-expanded="false"
+                                    aria-controls="flush-collapseOneD">
+                                    <img class="image_item" src="../imgs/1001.png" alt="basic boots">
+                                    <h3>basic boots</h3>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOneD" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOneD" data-bs-parent="#accordionFlushExampleD">
+                                <div class="accordion-body">
+                                    <p>Boots is the basic item from which the gold value for the stat movement speed is
+                                        derived (approximately 12 Gold 12 per point of movement speed).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item margin_accord">
+                            <h2 class="accordion-header" id="flush-headingTwoD">
+                                <button class="accordion-button collapsed padding_accord" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTwoD" aria-expanded="false"
+                                    aria-controls="flush-collapseTwoD">
+                                    <img class="image_item" src="../imgs/1001.png" alt="basic boots">
+                                    <h3>basic boots</h3>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwoD" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwoD" data-bs-parent="#accordionFlushExampleD">
+                                <div class="accordion-body">
+                                    <p>Boots is the basic item from which the gold value for the stat movement speed is
+                                        derived (approximately 12 Gold 12 per point of movement speed).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item margin_accord">
+                            <h2 class="accordion-header" id="flush-headingThreeD">
+                                <button class="accordion-button collapsed padding_accord" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeD"
+                                    aria-expanded="false" aria-controls="flush-collapseThreeD">
+                                    <img class="image_item" src="../imgs/1001.png" alt="basic boots">
+                                    <h3>basic boots</h3>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThreeD" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThreeD" data-bs-parent="#accordionFlushExampleD">
+                                <div class="accordion-body">
+                                    <p>Boots is the basic item from which the gold value for the stat movement speed is
+                                        derived (approximately 12 Gold 12 per point of movement speed).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card_item">
+                    <div class="accordion accordion-flush" id="accordionFlushExampleE">
+                        <div class="accordion-item margin_accord">
+                            <h2 class="accordion-header" id="flush-headingOneE">
+                                <button class="accordion-button collapsed padding_accord" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOneE" aria-expanded="false"
+                                    aria-controls="flush-collapseOneE">
+                                    <img class="image_item" src="../imgs/1001.png" alt="basic boots">
+                                    <h3>basic boots</h3>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOneE" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOneE" data-bs-parent="#accordionFlushExampleE">
+                                <div class="accordion-body">
+                                    <p>Boots is the basic item from which the gold value for the stat movement speed is
+                                        derived (approximately 12 Gold 12 per point of movement speed).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item margin_accord">
+                            <h2 class="accordion-header" id="flush-headingTwoE">
+                                <button class="accordion-button collapsed padding_accord" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTwoE" aria-expanded="false"
+                                    aria-controls="flush-collapseTwoE">
+                                    <img class="image_item" src="../imgs/1001.png" alt="basic boots">
+                                    <h3>basic boots</h3>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwoE" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwoE" data-bs-parent="#accordionFlushExampleE">
+                                <div class="accordion-body">
+                                    <p>Boots is the basic item from which the gold value for the stat movement speed is
+                                        derived (approximately 12 Gold 12 per point of movement speed).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item margin_accord">
+                            <h2 class="accordion-header" id="flush-headingThreeE">
+                                <button class="accordion-button collapsed padding_accord" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeE"
+                                    aria-expanded="false" aria-controls="flush-collapseThreeE">
+                                    <img class="image_item" src="../imgs/1001.png" alt="basic boots">
+                                    <h3>basic boots</h3>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThreeE" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThreeE" data-bs-parent="#accordionFlushExampleE">
+                                <div class="accordion-body">
+                                    <p>Boots is the basic item from which the gold value for the stat movement speed is
+                                        derived (approximately 12 Gold 12 per point of movement speed).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+
+
+            <div class="footer cl-amarillo">
+
+                <footer>
+
+                    <div class="icons_f">
+
+                        <a style="width:7%; margin:1% 2% 2% 2%;" href=".././"><img src=".././icons/hogar.svg"
+                                style="width: 95%;" class="icons_footer"></a>
+
+                        <img src=".././icons/discord.svg" class="icons_footer ">
+                        <img src=".././icons/facebook.svg" class="icons_footer ">
+                        <img src=".././icons/twitter.svg" class="icons_footer ">
+                        <img src=".././icons/usuario.svg" style="margin: 2% 2% 2% 0% ;" class="icons_footer ">
+                    </div>
+
+                </footer>
+
+            </div>
+
+    </section>
+    <script src="../scripts/bootstrap.bundle.min.js"></script>
 </body>
+
 
 </html>
