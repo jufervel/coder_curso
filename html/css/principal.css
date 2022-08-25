@@ -224,9 +224,7 @@ footer{
     /* border: solid 5px black;  */  
 }
 
-.card_item{
-    
-    
+.card_item{    
     background-color: lightgray;
     display: flex;
     overflow: auto;
@@ -381,6 +379,23 @@ footer{
         margin: 2% 2% 2% 2%;
         
 
+    }
+
+    .card_item{    
+        background-color: lightgray;
+        display: flex;
+        overflow: auto;
+        width: 63%;
+        /*  padding: 1%;  */
+        margin: 0% 1% 1% 0%;
+        flex-direction:column
+    }
+
+    .image_item{
+        width: 20%;
+        height: auto;
+    
+        margin: 1% 1% 1% 1%
     }
 
 }
