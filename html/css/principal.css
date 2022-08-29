@@ -54,6 +54,9 @@ a{
     text-decoration: none;
    
 }
+body{
+    background:black !important;
+}
 .button_selected{
     border: solid 3px gray
 }
@@ -185,20 +188,74 @@ footer{
    }
 .statistic{
     display: flex;
+    justify-content: center;
     
 }
 
 .card_statistic {
     width: 12%;
     background-color: lightgray;
-    display: inline-block;
+    display: flex;
     overflow: auto;
     padding: 5px;
     margin: 1% 1% 1% 1%;
     height: 400px;
     border: solid 5px black;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
     
     
+}
+
+.rectangle {
+    height: 80%;
+    width: 3%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.boxplot {
+height: 50%;
+width: 1000%;
+background-color: rgb(221, 17, 17);
+position: absolute;
+}
+
+.boxplot_line {
+    height: 1%;
+    width: 1500%;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    }
+
+.boxplot_cal {
+    height: 10%;
+    width: 100%;
+    background-color: rgb(66, 148, 67);
+    margin-top: 4%;
+    display: flex;
+    justify-content: space-around;
+    }
+.box_cal{
+    margin-top: 3%;
+    color: white;
+
+}
+
+.text_st{
+    font-size: 152%;
+}
+
+.tmp_orientation{
+    margin-top: -5000%;
+}
+
+.tmp_orientation_n{
+    margin-top: 5000%;
 }
 
 .card_timeLine {
@@ -225,7 +282,7 @@ footer{
 }
 
 .card_item{    
-    background-color: lightgray;
+    /* background-color: lightgray; */
     display: flex;
     overflow: auto;
     width: 18%;
@@ -337,14 +394,14 @@ footer{
     .card_statistic {
         width: 12%;
         background-color: lightgray;
-        display: inline-block;
+        display: flex;
         overflow: auto;
         padding: 5px;
         margin: 1% 1% 1% 1%;
         height: 80px;
         width: 80%;
         border: solid 5px black;
-        
+        flex-direction: row;
         
     }
 
@@ -397,6 +454,58 @@ footer{
     
         margin: 1% 1% 1% 1%
     }
+
+    .rectangle {
+        width: 80%;
+        height: 3%;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    
+    .boxplot {
+        width: 50%;
+        height: 1000%;
+        background-color: rgb(221, 17, 17);
+        position: absolute;
+        }
+        
+        .boxplot_line {
+            width: 1%;
+            height: 1500%;
+            background-color: rgb(0, 0, 0);
+            position: absolute;
+            }
+        
+        .boxplot_cal {
+            width: 10%;
+            height: 100%;
+            background-color: rgb(66, 148, 67);
+            margin-top: 0%;
+            display: flex;
+            justify-content: column ;
+            align-items:center
+            }
+        .box_cal{
+            margin-top: 50%;
+            color: white;
+            rotate: -90deg;
+            line-height: 70%;
+        }
+        .tmp_orientation{
+            margin-left: 60%;
+            margin-top: 0%;
+        }
+        
+        .tmp_orientation_n{
+            margin-left: -60%;
+            margin-top: 0%;
+        }
+        .text_st{
+            font-size: 100%;
+        }
 
 }
 
