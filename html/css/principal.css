@@ -54,6 +54,9 @@ a{
     text-decoration: none;
    
 }
+body{
+    background:black !important;
+}
 .button_selected{
     border: solid 3px gray
 }
@@ -185,20 +188,61 @@ footer{
    }
 .statistic{
     display: flex;
+    justify-content: center;
     
 }
 
 .card_statistic {
     width: 12%;
     background-color: lightgray;
-    display: inline-block;
+    display: flex;
     overflow: auto;
     padding: 5px;
     margin: 1% 1% 1% 1%;
     height: 400px;
     border: solid 5px black;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
     
     
+}
+
+.rectangle {
+    height: 80%;
+    width: 3%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.boxplot {
+height: 50%;
+width: 1000%;
+background-color: rgb(221, 17, 17);
+position: absolute;
+}
+
+.boxplot_line {
+    height: 1%;
+    width: 1500%;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    }
+
+.boxplot_cal {
+    height: 10%;
+    width: 100%;
+    background-color: rgb(66, 148, 67);
+    margin-top: 4%;
+    display: flex;
+    justify-content: space-around;
+    }
+.box_cal{
+    margin-top: 3%;
+    color: white;
 }
 
 .card_timeLine {
