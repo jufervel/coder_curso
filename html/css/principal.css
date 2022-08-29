@@ -243,6 +243,19 @@ position: absolute;
 .box_cal{
     margin-top: 3%;
     color: white;
+
+}
+
+.text_st{
+    font-size: 152%;
+}
+
+.tmp_orientation{
+    margin-top: -5000%;
+}
+
+.tmp_orientation_n{
+    margin-top: 5000%;
 }
 
 .card_timeLine {
@@ -269,7 +282,7 @@ position: absolute;
 }
 
 .card_item{    
-    background-color: lightgray;
+    /* background-color: lightgray; */
     display: flex;
     overflow: auto;
     width: 18%;
@@ -381,14 +394,14 @@ position: absolute;
     .card_statistic {
         width: 12%;
         background-color: lightgray;
-        display: inline-block;
+        display: flex;
         overflow: auto;
         padding: 5px;
         margin: 1% 1% 1% 1%;
         height: 80px;
         width: 80%;
         border: solid 5px black;
-        
+        flex-direction: row;
         
     }
 
@@ -441,6 +454,58 @@ position: absolute;
     
         margin: 1% 1% 1% 1%
     }
+
+    .rectangle {
+        width: 80%;
+        height: 3%;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    
+    .boxplot {
+        width: 50%;
+        height: 1000%;
+        background-color: rgb(221, 17, 17);
+        position: absolute;
+        }
+        
+        .boxplot_line {
+            width: 1%;
+            height: 1500%;
+            background-color: rgb(0, 0, 0);
+            position: absolute;
+            }
+        
+        .boxplot_cal {
+            width: 10%;
+            height: 100%;
+            background-color: rgb(66, 148, 67);
+            margin-top: 0%;
+            display: flex;
+            justify-content: column ;
+            align-items:center
+            }
+        .box_cal{
+            margin-top: 50%;
+            color: white;
+            rotate: -90deg;
+            line-height: 70%;
+        }
+        .tmp_orientation{
+            margin-left: 60%;
+            margin-top: 0%;
+        }
+        
+        .tmp_orientation_n{
+            margin-left: -60%;
+            margin-top: 0%;
+        }
+        .text_st{
+            font-size: 100%;
+        }
 
 }
 
