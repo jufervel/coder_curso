@@ -1,0 +1,548 @@
+:root{
+    --ancho: 1218px;
+}
+
+.grid{
+    display: grid;
+    height: 100vh;
+    /* Determina el número y tamaño de columnas*/
+    /* grid-template-columns: repeat(4, 20%); */
+    /* Determina el número y tamaño de filas*/
+    /* grid-template-rows: repeat(10, 1fr); */
+    grid-template-areas: 
+    "header header header header"
+    "menu menu menu menu"
+    "content content content content"
+    "content content content content"
+    "content content content content"
+    "content content content content"
+    "content content content content"
+    "content content content content"
+    "content content content content"
+    "footer footer footer footer";
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    justify-content: center;}
+
+
+.header{
+    grid-area: header;
+    /* grid-auto-flow: row; */
+}
+
+.menu{
+    grid-area: menu;
+}
+
+.content{
+    grid-area: content;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+.cl-red{background-color: rgb(230, 81, 81);}
+.cl-verde{background-color: rgb(93, 230, 81);}
+.cl-azul{background-color: rgb(81, 91, 230);}
+.cl-amarillo{background-color: rgb(190, 230, 81);}
+.cl-purpura{background-color: rgb(230, 81, 205);}
+.cl-naranja{background-color: rgb(230, 203, 81);}
+.cl-gris{background-color: rgb(102, 100, 100);}
+
+a{
+    text-decoration: none;
+   
+}
+body{
+    background:black !important;
+}
+.button_selected{
+    border: solid 3px gray
+}
+header {
+    display: flex;
+    justify-content: center;
+}
+.background_image{
+    position: absolute;
+    z-index: 0;
+    left: 0px;
+    top: 0px;
+}
+nav{
+    position: relative;
+    width: var(--ancho);
+    height: 252px;
+    display: flex;
+    align-items: flex-end;
+}
+.nav_1index{
+    position: relative;
+    z-index: 1;
+    
+
+}
+.img_icon{
+    margin: 0% 0% 2% 2%;
+    width: 10%;
+   /*  height: 120%; */
+
+}
+.text_header{
+    color: aliceblue;
+    padding-left: 1%;
+    margin: 0% auto 2% 0%;
+    list-style: none;
+
+}
+
+.text_columns{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.icons_header{
+    position: relative;
+    z-index: 1;
+    width: 7%;
+    margin: 2% 2% 2% 0%;
+    
+}
+.icons_footer{
+    position: relative;
+    z-index: 1;
+    width: 7%;
+    margin: 2% 2% 2% 2%;
+    
+
+}
+.icons_u{
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+    height: 100%;
+    align-items: flex-start;
+    filter: invert(100%);
+
+}
+.icons_f{
+    display: flex;
+    width: 40%;
+    height: 100%;
+    align-items: flex-start;
+    filter: invert(100%);
+
+}
+footer{
+    display: flex;
+    width: var(--ancho);
+    margin: 0px auto ;
+    background-color: black;
+    
+}
+
+.icon_hv{
+    width:7%; 
+    margin:2% 2% 2% 2%;
+}
+.g_content{
+    display: flex;
+    width: var(--ancho);
+    margin: 0px auto ;
+    flex-wrap: wrap;
+   /*  background-color: blue; */
+  
+}
+.g_content_champion{
+    display: flex;
+    width: var(--ancho);
+    margin: 0px auto ;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.g_content_items{
+    display: flex;
+    width: var(--ancho);
+    margin: 0px auto ;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.botones{
+    /* text-align: center; */
+    display: flex;
+    width: 20%;
+    
+    background-color: rgb(0, 0, 0);
+    /* order: -1; */
+    
+    margin: 1% 1% 1% 0%;
+    font-family: monospace;
+    padding: 0.3%; 
+    justify-content: space-evenly;
+}
+.home_botones{
+    width: 26px;
+    margin: 1% 1% 0.6% 0%;
+}
+.links{
+    color: white;
+   }
+.statistic{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.card_statistic {
+    width: 12%;
+    background-color: lightgray;
+    display: flex;
+    overflow: auto;
+    padding: 5px;
+    margin: 1% 1% 1% 1%;
+    height: 400px;
+    border: solid 5px black;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+.rectangle {
+    height: 80%;
+    width: 3%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.boxplot {
+height: 50%;
+width: 1000%;
+background-color: rgb(221, 17, 17);
+position: absolute;
+}
+
+.boxplot_line {
+    height: 1%;
+    width: 1500%;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    }
+
+.boxplot_cal {
+    height: 10%;
+    width: 100%;
+    background-color: rgb(66, 148, 67);
+    margin-top: 4%;
+    display: flex;
+    justify-content: space-around;
+    }
+.box_cal{
+    margin-top: 3%;
+    color: white;
+
+}
+
+.text_st{
+    font-size: 152%;
+}
+
+.tmp_orientation{
+    margin-top: -5000%;
+}
+
+.tmp_orientation_n{
+    margin-top: 5000%;
+}
+
+.card_timeLine {
+    width: 12%;
+    background-color: lightgray;
+    display: inline-block;
+    overflow: auto;
+    padding: 5px;
+    margin: 1% 1% 1% 1%;
+    height: 400px;
+    border: solid 5px black;
+    width: 46%;
+    
+}
+.card_champions{
+    width: 5%;
+    background-color: lightgray;
+    display: inline-block;
+    overflow: auto;
+    padding: 5px;
+    margin: 1% 1% 1% 0%;
+    height: 20%;
+    /* border: solid 5px black;  */  
+}
+
+.card_item{    
+    /* background-color: lightgray; */
+    display: flex;
+    overflow: auto;
+    width: 18%;
+    /*  padding: 1%;  */
+    margin: 0% 1% 1% 0%;
+    flex-direction:column
+}
+.image_item{
+    width: 30%;
+    height: auto;
+
+    margin: 1% 1% 1% 1%
+}
+.text_on_item{
+    display: flex;
+    
+    flex-direction: column;
+}
+.text_on_item > p, .text_on_item > h3{
+    margin: 0%;
+}
+.image_champ{
+    width: 100%;
+}
+
+@media screen and (max-width:450px) {
+    
+    :root{
+        --ancho:380px;
+    }
+
+    nav{
+        position: relative;
+        width: var(--ancho);
+        height: auto;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .g_content{
+        display: flex;
+        width: var(--ancho);
+        margin: 0px auto ;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .background_image{
+        position: absolute;
+        z-index: 0;
+        left: 0px;
+        top: 0px;
+        width: var(--ancho);
+    }
+
+    .nav_1index{
+        position: relative;
+        z-index: 1;
+        /* width: 17%; */
+
+    }
+    .img_icon{
+        margin: 0% 0% 0% 0%;
+        width: 20.6%;
+       
+    
+    }
+    .text_header{
+        color: aliceblue;
+        padding-left: 1%;
+        margin: 0% auto 2% 0%;
+        list-style: none;
+        
+    
+    }
+    .icons_u{
+        display: flex;
+        justify-content: flex-end;
+        width: 40%;
+        height: 100%;
+        align-items: flex-start;
+        filter: invert(100%);
+        flex-direction: row;
+        margin-right: 3%;}
+
+    .icons_header{
+        position: relative;
+        z-index: 1;
+        width: 9%;
+        margin: 2% 3% 3% 3%;}
+
+    .botones{
+        /* text-align: center; */
+        display: flex;
+        width: 28%;
+        
+        background-color: rgb(0, 0, 0);
+        /* order: -1; */
+        
+        margin: 1% 1% 1% 0%;
+        font-family: monospace;
+        padding: 0.3%; 
+        justify-content: space-evenly;
+       
+    }
+    .home_botones{
+        /* width: 25%; */
+        margin: 1% 1% 0% 1%;
+    }
+    .card_statistic {
+        width: 12%;
+        background-color: lightgray;
+        display: flex;
+        overflow: auto;
+        padding: 5px;
+        margin: 1% 1% 1% 1%;
+        height: 80px;
+        width: 80%;
+        border: solid 5px black;
+        flex-direction: row;
+        
+    }
+
+    .card_timeLine {
+        width: 12%;
+        background-color: lightgray;
+        display: inline-block;
+        overflow: auto;
+        padding: 5px;
+        margin: 1% 1% 1% 1%;
+        height: 200px;
+        border: solid 5px black;
+        width: 80%;
+    }
+
+    .card_champions{
+        width: 17%;
+        background-color: lightgray;
+        display: inline-block;
+        overflow: auto;
+        padding: 5px;
+        margin: 1% 1% 1% 1%;
+        /* height: 20%; */
+        /* border: solid 5px black;  */  
+    }
+
+
+    .icons_footer{
+        position: relative;
+        z-index: 1;
+        width: 7%;
+        margin: 2% 2% 2% 2%;
+        
+
+    }
+
+    .card_item{    
+        background-color: lightgray;
+        display: flex;
+        overflow: auto;
+        width: 63%;
+        /*  padding: 1%;  */
+        margin: 0% 1% 1% 0%;
+        flex-direction:column
+    }
+
+    .image_item{
+        width: 20%;
+        height: auto;
+    
+        margin: 1% 1% 1% 1%
+    }
+
+    .rectangle {
+        width: 80%;
+        height: 3%;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    
+    .boxplot {
+        width: 50%;
+        height: 1000%;
+        background-color: rgb(221, 17, 17);
+        position: absolute;
+        }
+        
+        .boxplot_line {
+            width: 1%;
+            height: 1500%;
+            background-color: rgb(0, 0, 0);
+            position: absolute;
+            }
+        
+        .boxplot_cal {
+            width: 10%;
+            height: 100%;
+            background-color: rgb(66, 148, 67);
+            margin-top: 0%;
+            display: flex;
+            justify-content: column ;
+            align-items:center
+            }
+        .box_cal{
+            margin-top: 50%;
+            color: white;
+            rotate: -90deg;
+            line-height: 70%;
+        }
+        .tmp_orientation{
+            margin-left: 60%;
+            margin-top: 0%;
+        }
+        
+        .tmp_orientation_n{
+            margin-left: -60%;
+            margin-top: 0%;
+        }
+        .text_st{
+            font-size: 100%;
+        }
+
+}
+
+.card_statistic:hover{
+    background:rgb(99, 99, 99);
+    /* transition: 500ms;
+    transform: scale(1.1); */
+
+    animation: expand 500ms;
+    transform: scale(1.1);
+}
+.card_champions:hover{
+    background:rgb(99, 99, 99);
+    /* transition: 500ms;
+    transform: scale(1.1); */
+
+    animation: expand 500ms;
+    transform: scale(1.1);
+}
+/* .card_item:hover{
+    background:rgb(99, 99, 99);
+    transition: 500ms;
+    transform: scale(1.1); 
+
+    animation: expand 500ms;
+    transform: scale(1.1);
+} */
+@keyframes expand{
+    0%{transform: scale(1);}
+    
+    100%{ transform: scale(1.1);}
+    
+}
+.margin_accord{
+    margin-top: 2%;
+}
+.padding_accord{
+    padding: 0% !important;
+    width: 93% !important;
+}
