@@ -97,9 +97,9 @@ while (win_user < matches && win_machine < matches){
 
     }
 if (win_user < win_machine){
-    alert(`te rompí la carita por ${win_machine - win_user}`+ ' '+ d_2 + ' vs '+ d_1)
+    alert(`te rompí la carita por ${win_machine - win_user}`)
 }else{
-    alert(`para que no llores te dejé ganar ${win_machine - win_user} `+ d_2 + ' vs '+ d_1)
+    alert(`Para que no llores te dejé ganar esta vez ${ win_user- win_machine}`)
 }
 
 
