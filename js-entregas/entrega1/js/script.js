@@ -80,6 +80,7 @@ while (win_user < matches && win_machine < matches){
     
     if (result =='d_1'){
         win_machine++
+        
         alert( good_phrases[Math.floor(Math.random() * good_phrases.length)]+ ' '+ d_1 + ' vs '+ d_2)
     }else if (result == 'tie'){
         console.log('igual')
@@ -89,17 +90,20 @@ while (win_user < matches && win_machine < matches){
          alert( bad_phrases[Math.floor(Math.random() * bad_phrases.length)]+ ' '+ d_2 + ' vs '+ d_1)
         }
    console.log(`user: ${win_user}, seleccion ${d_2} vs machine ${win_machine} seleccion ${d_1}`)
+   
+    if (win_user < matches && win_machine < matches){
 
-    d_1 = possibilities[Math.floor(Math.random() * possibilities.length)];
-    pre_d_2 = prompt("Para darte ventaja ya tengo mi selección, ¿cual es la tuya?:").toLowerCase();
-    d_2= validar(pre_d_2)
+        d_1 = possibilities[Math.floor(Math.random() * possibilities.length)];
+        pre_d_2 = prompt("Para darte ventaja ya tengo mi selección, ¿cual es la tuya?:").toLowerCase();
+        d_2= validar(pre_d_2)
+    }
     console.log(`result: ${result}user: ${win_user}, seleccion ${d_2} vs machine ${win_machine} seleccion ${d_1}`)
 
     }
 if (win_user < win_machine){
-    alert(`te rompí la carita por ${win_machine - win_user}`+ ' '+ d_2 + ' vs '+ d_1)
+    alert(`te rompí la carita por ${win_machine - win_user} partidas de diferencia`)
 }else{
-    alert(`para que no llores te dejé ganar ${win_machine - win_user} `+ d_2 + ' vs '+ d_1)
+    alert(`Para que no llores te dejé ganar esta vez por ${ win_user- win_machine} partidas de diferencia`)
 }
 
 
