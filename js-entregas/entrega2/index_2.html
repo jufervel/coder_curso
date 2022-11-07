@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="formulario1">
+        <form class="formulario_1">
+            <legend>Piedra, papel o tijera</legend>
+            <div class="col-md-1">
+                <label for="inputNombre" class="form-label">Hola manco como, te llamas?</label>
+                <input type="text" class="form-control" id="inputNombre">
+            </div>
+           
+            <div class="col-md-2">
+                <label for="inputProvincia" class="form-label">Cuantas partidas quieres jugar?</label>
+                <select id="inputProvincia" class="form-select">
+                    <option selected>Selecciona una</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+
+                </select>
+            </div>
+            <div class="col-13">
+                <button type="submit" class="btn btn-primary">Juguemos</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="formulario2" class="not_active">
+        <form class="formulario_1">
+            <legend>Como estoy seguro de que voy a ganar ya tengo mi selección selecciona la tuya</legend>
+                      
+            <div class="col-md-3">
+                <label for="inputProvincia" class="form-label">Selecciona tu jugada</label>
+                <select id="inputProvincia" class="form-select">
+                    <option selected>Selecciona una</option>
+                    <option>Piedra</option>
+                    <option>Papel</option>
+                    <option>tijera</option>
+                    
+
+                </select>
+            </div>
+            <div class="col-13">
+                <button type="submit" class="btn btn-primary">Juguemos</button>
+            </div>
+        </form>
+    </div>
+    <div id = 'game' class="not_active">
+
+        <div id="paper" class="card">
+            <img src="./imgs/paper.png" alt="">
+        </div>
+        <div id="rock"  class="card">
+            <img src="./imgs/rock.png" alt="">
+        </div>
+        <div id="paper"  class="card">
+            <img src="./imgs/paper.png" alt="">
+        </div>
+        <div id="check"  >
+            <img src="./imgs/check.png" alt="">
+        </div>
+        <div id="cross"  >
+            <img src="./imgs/cross.png" alt="">
+        </div>
+
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
