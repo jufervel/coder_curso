@@ -1,0 +1,27 @@
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+div, form, label, input{
+    width:  100%;
+    }
+
+.card{
+    max-width:32%;
+}
+.col-md-1{
+    width: 50%;
+}
+.col-md-1{
+    width: 50%;
+}
+.col-md-3{
+    width: 30%;
+}
+.not_active{
+    display: none;
+}
