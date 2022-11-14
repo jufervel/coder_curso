@@ -113,13 +113,20 @@ button2.addEventListener("click", () => {
     if (document.getElementById('inputselection').value.length > 6) {
         alert(`te tengo que decir todo ${name_w}? selecciona una pinche jugada`)
     } else {
-
-        selection = document.getElementById('inputselection').value
+        
+        
+        selection = possibilities.find(obj => obj == document.getElementById('inputselection').value)
+        console.log(selection, 'test_')
         form2.classList.toggle('not_active')
         game.classList.toggle('not_active')
         human.setAttribute("src", objeto[selection])
         machine.setAttribute("src", objeto[random_possibility])
         winner = who_win(selection, random_possibility)
+
+        
+        
+
+
         if (winner == 'd_1') {
             builtElement("./imgs/check.png", human_cont)
             builtElement("./imgs/cross.png", machine_cont)
