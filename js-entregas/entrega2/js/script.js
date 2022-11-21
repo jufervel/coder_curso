@@ -1,3 +1,5 @@
+//const { NULL } = require("node-sass")
+
 const possibilities = ['Piedra', 'Papel', 'Tijera']
 const good_phrases = [
     'A ver si juegas mejor ya que gané',
@@ -39,23 +41,54 @@ let machine_cont = document.getElementById('checkM')
 let win_user = 0
 let win_machine = 0
 
+//Guarda el objeto PF en el localStorage, con la key 'plazoFijo'
+function guardarPFenStorage(datos) {
+    localStorage.setItem('name', JSON.stringify(datos));
+}
+
+//Esta función va a retornar un objeto del storage si se guardó (a través de la key), o false si no encuentra el objeto
+function recuperarPFDeStorage(key) {
+    return JSON.parse(localStorage.getItem(key));
+}
+
+console.log(localStorage.getItem("name"))
+
+ if (localStorage.getItem("name") != null){
+    name_1.setAttribute( 'placeholder', `Si eres ${recuperarPFDeStorage('name')} solo elige la cantidad de juegos que quieres jugar`)
+    name_w= localStorage.getItem("name")
+
+    }else{ name_w =name_1.value}
+ 
+
 
 
 button.addEventListener("click", () => {
 
-
+    console.log('valor sin escribir nada con carga en storage', name_1.value)
+    
     if (name_1.value.length != 0) {
 
         name_w = name_1.value
         console.log(name_w)
+        guardarPFenStorage(name_w)
         if (number_matches.value.length <= 2) {
             qty_matches = number_matches.value
             console.log(qty_matches)
             form1.classList.toggle('not_active')
             form2.classList.toggle('not_active')
         } else { alert('selecciona cuantas partidas, o tienes miedito?') }
-    } else {
-        alert('que onda wey, escribe tu ... nombre')
+    } else if (name_1.value.length == 0 &&  name_w.length >0) {
+        console.log('entró a else if')
+        if (number_matches.value.length <= 2) {
+            qty_matches = number_matches.value
+            console.log(qty_matches)
+            form1.classList.toggle('not_active')
+            form2.classList.toggle('not_active')
+        } else { alert('selecciona cuantas partidas, o tienes miedito?') }
+        alert(`vas a jugar con ${name_w}`)
+        
+    }else{
+        alert('wey.. emm... como te lo digo... no tienes nombre')
     }
 })
 
